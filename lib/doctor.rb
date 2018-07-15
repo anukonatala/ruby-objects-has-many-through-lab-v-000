@@ -13,6 +13,7 @@ class Doctor
   end
   
   def new_appointment(patient, time)
+    binding.pry
     patient = Patient.new(patient) 
     @patients << patient
     appointment = Appointment.new(patient, self, time)
